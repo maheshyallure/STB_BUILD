@@ -1,0 +1,32 @@
+STEP 1:
+ALI_3281\ALi_SDK\prj\app\demo\combo\sabbat_dual
+go to this path
+
+
+STEP 2:
+PATH FILE: ALI_3281\ALi_SDK\prj\app\demo\combo\sabbat_dual\compiler_3281.def
+_CUSTOM_VEPL_PRYSM_=1 Enable
+_CUSTOM_DEVELOPMENT_=1   Disable
+Step 2 is already done in this ALI SDK
+
+STEP 3:
+COMPILER COMMAND:
+make path config_3281 new ddk product_7z
+	
+	
+If you want to enable Adbanner do the below step.
+Open this file: ALI_3281\ALi_SDK\prj\app\demo\combo\sabbat_dual\compiler_3281.def
+
+Go to this operator: _CUSTOM_VEPL_PRYSM_
+ 
+Enable the below defines:
+ 
+ BDI_AD_BANNER_SUPPORT_ENABLED=1					#ad banner related defines
+		_ENABLE_LIGHT_CHAN_AD_BANNER_=1
+		_ENABLE_MINI_EPG_AD_BANNER_=1
+		_ENABLE_SUBMENU_AD_BANNER_=1
+		_ENABLE_CHAN_LIST_AD_BANNER_=1
+		
+		
+
+re compile the code(follow step 3).
